@@ -19,7 +19,7 @@ MANIFEST HERE
 
 - [ ] Latest upstream version.
 - [ ] I agree to maintain this package.
-- [ ] I agree to notify @git-bruh if I can no longer maintain this package.
+- [ ] I agree to notify the @kiss-community maintainers if I can no longer maintain this package.
 
 ## Existing package
 

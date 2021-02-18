@@ -1,0 +1,4 @@
+libtermkey
+lpeg             make
+lua              make
+ncurses

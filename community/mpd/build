@@ -1,0 +1,24 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+meson \
+	--prefix=/usr \
+	--sysconfdir=/etc \
+	--localstatedir=/var \
+	-D html_manual=false \
+	-D inotify=false \
+	-D io_uring=disabled \
+	-D systemd=disabled \
+	-D libmpdclient=enabled \
+	-D jack=disabled \
+	-D openal=disabled \
+	-D oss=disabled \
+	-D pipe=false \
+	-D pulse=disabled \
+	-D shout=disabled \
+	-D dbus=disabled \
+	. output
+
+ninja -C output
+ninja -C output install

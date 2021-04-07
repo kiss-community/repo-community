@@ -14,4 +14,7 @@ External menus must be called with 'ytfzf -D'.
 Optional: ueberzug can be installed with 'pip'
 to get thumbnails support.
 
+NOTE: if mpv fails to play the video, it needs to be
+rebuilt. 
+
 EOF

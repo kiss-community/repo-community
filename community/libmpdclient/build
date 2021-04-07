@@ -1,11 +1,9 @@
 #!/bin/sh -e
 
-export DESTDIR="$1"
+export DESTDIR="/usr"
 
 meson \
     --prefix=/usr \
-    --sysconfdir=/etc \
-    --mandir=/usr/share/man \
     . output
 
 ninja -C output

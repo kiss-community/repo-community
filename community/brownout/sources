@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 https://github.com/graupe/brownout/archive/refs/tags/v0.4.tar.gz
+=======
+git+https://github.com/graupe/brownout.git
+>>>>>>> b8475701 (brownout: new package at 0.4)

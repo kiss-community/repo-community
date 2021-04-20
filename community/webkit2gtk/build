@@ -6,6 +6,12 @@ kiss list openjpeg2 && jpeg=ON
 # Enable WEB_CRYPTO if libtasn1 is installed.
 kiss list libtasn1 && tasn=ON
 
+# __WORDSIZE is undefined on musl.
+WORDSIZE="$(getconf LONG_BIT)"
+
+export CFLAGS="$CFLAGS -D__WORDSIZE=$WORDSIZE"
+export CXXFLAGS="$CXXFLAGS -D__WORDSIZE=$WORDSIZE"
+
 patch -p1 < fix-musl.patch
 
 # Fix for icu 69

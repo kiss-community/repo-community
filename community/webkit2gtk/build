@@ -8,11 +8,10 @@ kiss list libtasn1 && tasn=ON
 
 # __WORDSIZE is undefined on musl.
 WORDSIZE="$(getconf LONG_BIT)"
-
 export CFLAGS="$CFLAGS -D__WORDSIZE=$WORDSIZE"
 export CXXFLAGS="$CXXFLAGS -D__WORDSIZE=$WORDSIZE"
 
-patch -p1 < fix-musl.patch
+patch -p1 < musl-thread-stack.patch
 
 # Fix for icu 69
 sed -i 's|#define U_HIDE_DEPRECATED_API 1||g' Source/WTF/wtf/Platform.h

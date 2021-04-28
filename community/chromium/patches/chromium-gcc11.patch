@@ -1,5 +1,5 @@
 diff --git a/chrome/browser/ui/bookmarks/bookmark_tab_helper.cc b/chrome/browser/ui/bookmarks/bookmark_tab_helper.cc
-index 1d15141..8757d5c 100644
+index 7976d02..134438a 100644
 --- a/chrome/browser/ui/bookmarks/bookmark_tab_helper.cc
 +++ b/chrome/browser/ui/bookmarks/bookmark_tab_helper.cc
 @@ -2,6 +2,7 @@
@@ -9,7 +9,7 @@ index 1d15141..8757d5c 100644
 +#include <cstddef>
  #include "chrome/browser/ui/bookmarks/bookmark_tab_helper.h"
  
- #include "base/observer_list.h"
+ #include "base/command_line.h"
 diff --git a/components/bookmarks/browser/base_bookmark_model_observer.cc b/components/bookmarks/browser/base_bookmark_model_observer.cc
 index 657a3c9..ad641a0 100644
 --- a/components/bookmarks/browser/base_bookmark_model_observer.cc

@@ -27,6 +27,7 @@ export DESTDIR="$1"
 cmake -B build \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib \
     -DLIB_INSTALL_DIR=/usr/lib \
     -DPORT=GTK \
     -DCMAKE_SKIP_RPATH=ON \

@@ -3,6 +3,7 @@
 # Fix build with GCC 10.
 export CFLAGS="$CFLAGS -fcommon"
 
+./autogen.sh
 ./configure \
     --prefix=/usr \
     --sysconfdir=/etc \

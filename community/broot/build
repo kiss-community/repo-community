@@ -1,0 +1,18 @@
+#!/bin/sh -e
+
+cargo build --release --locked
+install -Dm755 target/release/broot "$1/usr/bin/broot"
+
+release_date=$(sed -n "s/.*v$2 - \(.*\)$/\1/p" CHANGELOG.md)
+sed -i "s/#version/$2/g"         man/page
+sed -i "s/#date/$release_date/g" man/page
+out_dir=$(find target/release/build -type f -name broot.bash -exec dirname {} \;)
+
+install -Dm644 LICENSE               "$1/usr/share/licenses/broot/LICENSE"
+install -Dm644 man/page              "$1/usr/share/man/man1/broot.1"
+install -Dm644 "$out_dir/broot.bash" "$1/usr/share/bash-completion/completions/broot"
+install -Dm644 "$out_dir/br.bash"    "$1/usr/share/bash-completion/completions/br"
+install -Dm644 "$out_dir/broot.fish" "$1/usr/share/fish/vendor_completions.d/broot.fish"
+install -Dm644 "$out_dir/br.fish"    "$1/usr/share/fish/vendor_completions.d/br.fish"
+install -Dm644 "$out_dir/_broot"     "$1/usr/share/zsh/site-functions/_broot"
+install -Dm644 "$out_dir/_br"        "$1/usr/share/zsh/site-functions/_br"

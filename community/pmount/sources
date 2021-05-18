@@ -1,0 +1,3 @@
+http://deb.debian.org/debian/pool/main/p/pmount/pmount_0.9.23.orig.tar.bz2
+patches/001-disable-intltool.patch
+patches/001-fix-musl-build.patch

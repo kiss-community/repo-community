@@ -1,3 +1,2 @@
-autoconf make
+automake make
 util-linux
-

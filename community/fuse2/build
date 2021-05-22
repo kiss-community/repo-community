@@ -4,7 +4,7 @@
 	--prefix=/usr \
 	--bindir=/usr/bin \
 	--sbindir=/usr/bin \
-	--datarootdir=/usr/shared \
+	--datarootdir=/usr/share \
 	--disable-example \
 	MOUNT_FUSE_PATH=/usr/bin \
 	UDEV_RULES_PATH=/usr/lib/udev

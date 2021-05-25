@@ -1,11 +1,15 @@
 #!/bin/sh -e
 
-./configure \
-    --prefix=/usr \
-    --with-threads \
-    --with-history \
-    --without-python \
-    --without-icu
+export DESTDIR="$1"
 
-make
-make DESTDIR="$1" install
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DLIBXML2_WITH_THREADS=ON \
+    -DLIBXML2_WITH_PYTHON=OFF \
+    -DLIBXML2_WITH_ICU=OFF \
+    -DLIBXML2_WITH_DOCB=OFF
+
+cmake --build   build
+cmake --install build

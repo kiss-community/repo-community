@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+# We have to edit files to set the install location
+sed "s/\/opt\/schily/\/usr/g" -i DEFAULTS/Defaults.linux
+
+make
+make DESTDIR="$1" install
+
+# It looks like there is no easy way to stop the build system
+# from creating the sbin dir, so we have to take care of it
+# manually
+mv "$1/usr/sbin/rscsi" "$1/usr/bin"
+rm -r "$1/usr/sbin"

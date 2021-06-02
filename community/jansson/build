@@ -1,5 +1,8 @@
 #!/bin/sh -e
 
-./configure --prefix=/usr --disable-static
-make PREFIX=/usr
-make DESTDIR="$1" PREFIX=/usr install
+./configure \
+    --prefix=/usr \
+    --disable-static
+
+make
+make DESTDIR="$1" install

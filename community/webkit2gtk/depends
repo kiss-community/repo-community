@@ -4,7 +4,6 @@ glib-networking
 gperf  make
 gtk+3
 harfbuzz-icu
-libXt
 libgcrypt
 libsoup
 libwebp

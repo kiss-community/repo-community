@@ -1,4 +1,0 @@
-cmake make
-clang
-llvm
-lld

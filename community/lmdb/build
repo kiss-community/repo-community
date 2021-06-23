@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+cd libraries/liblmdb
+
+# shellcheck disable=2086
+make CC=${CC:-cc}
+make DESTDIR="$1" prefix=/usr install

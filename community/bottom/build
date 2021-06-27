@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
-cargo build --release --locked
+cargo build \
+    --release \
+    --locked
 
 install -Dm755 target/release/btm "$1/usr/bin/btm"

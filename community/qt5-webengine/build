@@ -4,6 +4,9 @@ for patch in *.patch; do
     patch -p1 < "$patch"
 done
 
+# Without this folder, Qt can't find its header files.
+mkdir .git src/3rdparty/chromium/.git
+
 # perfetto strikes again
 # Probably remove next time chromium gets updated... 
 # Broken with gcc 11.1.0

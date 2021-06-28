@@ -1,4 +1,5 @@
-https://dev.alpinelinux.org/archive/qt5-qtwebengine/qtwebengine-e0b4b9436033e9bc376597ed90dd1fca9cdc90ff.tar.gz
+https://invent.kde.org/qt/qt/qtwebengine/-/archive/349db5edcb67574f646eca7b336b9571b9777816.tar.gz
+https://invent.kde.org/qt/qt/qtwebengine-chromium/-/archive/eaffb82d5ee99ea1db8c0d4d359bbc72e77f065b.tar.gz src/3rdparty
 patches/dispatch_to_musl.patch
 patches/execinfo.patch
 patches/mallinfo.patch

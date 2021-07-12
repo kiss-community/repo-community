@@ -1,9 +1,0 @@
-libX11
-libXext
-libXi
-libXinerama
-libXrandr
-linux-headers make
-pkgconf       make
-xorg-server
-xorgproto     make

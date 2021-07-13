@@ -1,6 +1,0 @@
-cmake make
-glu make
-libXi
-libXrandr
-libXxf86vm make
-mesa

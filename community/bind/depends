@@ -1,8 +1,8 @@
 json-c
 libcap
 libnghttp2
-libressl
 libuv
+openssl
 perl    make
 pkgconf make
 xz

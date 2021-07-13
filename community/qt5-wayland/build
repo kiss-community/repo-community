@@ -3,7 +3,8 @@
 # Without this folder, Qt can't find its own header files.
 mkdir .git
 
-qmake
+qmake \
+	CONFIG+=wayland-compositor
 
 make
 make INSTALL_ROOT="$1" install

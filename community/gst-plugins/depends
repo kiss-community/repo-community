@@ -5,16 +5,15 @@ gst-plugins-base
 gstreamer
 lame
 lcms
-libXdamage
 libjpeg-turbo
 libpng
-libressl
 libsoup
 libvorbis
 libvpx
 libwebp
 linux-headers make
 meson make
+openssl
 opus
 pango
 python make

@@ -2,8 +2,6 @@
 
 ./configure \
   --prefix=/usr \
-  --bindir=/usr/bin \
-  --sbindir=/usr/sbin \
   --enable-manpages-build=yes \
   --enable-mscrypto=yes \
   --enable-mscng=yes \

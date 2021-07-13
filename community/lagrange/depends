@@ -1,5 +1,5 @@
 cmake make
-libressl
 libunistring
+openssl
 pcre
 sdl2

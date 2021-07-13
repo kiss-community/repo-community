@@ -1,5 +1,0 @@
-#!/bin/sh -e
-
-make
-
-install -Dm755 grabc "$1/usr/bin/grabc"

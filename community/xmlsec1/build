@@ -2,30 +2,7 @@
 
 ./configure \
   --prefix=/usr \
-  --enable-manpages-build=yes \
-  --enable-mscrypto=yes \
-  --enable-mscng=yes \
-  --enable-unicode=yes \
-  --enable-md5=yes \
-  --enable-ripemd160=yes \
-  --enable-sha1=yes \
-  --enable-sha224=yes \
-  --enable-sha256=yes \
-  --enable-sha384=yes \
-  --enable-sha512=yes \
-  --enable-hmac=yes \
-  --enable-dsa=yes \
-  --enable-rsa=yes \
-  --enable-x509=yes \
-  --enable-des=yes \
-  --enable-aes=yes \
-  --enable-gost=yes \
-  --enable-xmldsig=yes \
-  --enable-xmlenc=yes \
-  --enable-soap=yes \
-  --enable-mans=yes \
-  --enable-docs=no \
-  --enable-apps=yes
+  --enable-docs=no
 
 make
 make DESTDIR="$1" install

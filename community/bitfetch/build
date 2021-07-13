@@ -1,4 +1,0 @@
-#!/bin/sh -e
-
-make ID=kiss bitfetch-build
-make DESTDIR="$1" PREFIX=/usr install

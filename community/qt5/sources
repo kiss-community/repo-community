@@ -1,6 +1,2 @@
 https://invent.kde.org/qt/qt/qtbase/-/archive/cb2da673f53815a5cfe15f50df49b98032429f9e/qtbase-cb2da673f53815a5cfe15f50df49b98032429f9e.tar.gz
 files/qt.conf
-patches/qsslsocket_openssl_cpp.patch
-patches/qsslcontext_openssl_cpp.patch
-patches/qsslsocket_openssl_symbols_p.patch
-patches/qsslsocket_openssl_symbols_cpp.patch

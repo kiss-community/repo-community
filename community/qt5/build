@@ -1,9 +1,5 @@
 #!/bin/sh -e
 
-for patch in *.patch; do
-    patch -p1 < "$patch"
-done
-
 # Without this folder, Qt can't find its header files.
 mkdir .git
 
@@ -28,7 +24,6 @@ sed -i 's/define QLOG/define N/g' \
     -no-separate-debug-info \
     -no-pch \
     -no-dbus \
-    -no-dtls \
     -no-accessibility \
     -no-gtk \
     -no-glib \
@@ -38,7 +33,7 @@ sed -i 's/define QLOG/define N/g' \
     -system-zlib \
     -system-freetype \
     -system-harfbuzz \
-    -silent 
+    -silent
 
 make
 make INSTALL_ROOT="$1" install

@@ -4,10 +4,6 @@ flex              make
 fontconfig
 freetype-harfbuzz
 gperf             make
-libXcomposite
-libXcursor
-libXi
-libXtst
 libdrm
 libevent
 libxml2

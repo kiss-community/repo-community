@@ -1,0 +1,5 @@
+# Rust is needed at compile time.
+rust
+
+# zlib is needed at runtime.
+zlib
